@@ -27,6 +27,6 @@ Install feh
 install *pavucontrol*
 install *i3-volume*
 install *notify-osd*
-##Font
+## Font
 install *ttf-font-awesome*
 
