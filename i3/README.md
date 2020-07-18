@@ -23,5 +23,10 @@ Turn on gestures using *libinput-gestures* and *gestures gui*.
 Install *blueberry*.
 ## Desktop Background
 Install feh
-
+## Volume
+install *pavucontrol*
+install *i3-volume*
+install *notify-osd*
+##Font
+install *ttf-font-awesome*
 
