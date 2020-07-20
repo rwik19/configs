@@ -1,3 +1,4 @@
+# i3-gaps configs
 ## dmenu
 Install *dmenu*.  
 Edit **/etc/locale.gen**. Uncomment en_US.UTF-8.  
@@ -29,4 +30,10 @@ install *i3-volume*
 install *notify-osd*  
 ## Font
 install *ttf-font-awesome*  
-
+install *awesome-terminal-fonts*  
+install *powerline-onts*  
+## Status bar
+Install *bumblebee-status*  
+##Transparency
+Install picom  
+Keep the picom folder in ~/.config  
