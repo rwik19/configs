@@ -392,3 +392,6 @@ gaps inner 20
 
 #Compton/Picom
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
+#Libinput-gestures
+exec --no-startup-id libinput-gestures-setup start
