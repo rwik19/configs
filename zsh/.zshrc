@@ -117,4 +117,3 @@ alias rm="rm -i"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-neofetch

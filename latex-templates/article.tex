@@ -1,0 +1,29 @@
+\documentclass[10pt, a4paper]{extarticle}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{framed}
+
+\newcounter{pnumber}
+
+\begin{document}
+	\begin{center}
+		\Large Title \\
+		\large Author
+	\end{center}
+	\hrule
+	
+	\tableofcontents \thispagestyle{empty}
+	\setcounter{pnumber}{\value{page}}
+	
+	\newpage
+	\setcounter{page}{\value{pnumber}+1}
+
+	\section{}
+
+\end{document}
