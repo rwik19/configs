@@ -14,7 +14,7 @@ call plug#begin(g:plugged_home)
     " File Explorer
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    "Plug 'jiangmiao/auto-pairs'
     Plug 'chriskempson/base16-vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'

@@ -34,7 +34,7 @@ bindsym XF86TouchpadToggle exec bash ~/.config/i3/toggletouchpad.sh # toggle tou
 exec_always --no-startup-id rfkill block bluetooth
 
 #Desktop Background
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/'firewatch.jpg'
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/'wild.jpg'
 
 #Redshift
 #exec --no-startup-id redshift-gtk
@@ -239,7 +239,8 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 bindsym $mod+b exec brave
 bindsym $mod+n exec nemo
 bindsym $mod+c exec gnome-calculator
-bindsym $mod+i exec gnome-terminal nvim ~/.config/i3/config
+bindsym $mod+i exec gnome-terminal -- nvim ~/.config/i3/config
+bindsym $mod+r exec gnome-terminal -- ranger ~/Desktop/RWIK/SEM3
 
 #Hibernate
 bindsym Control+$mod+h exec i3lock -i ~/Pictures/lock-screen.png && systemctl hibernate
@@ -384,7 +385,7 @@ mode "$mode_gaps_left" {
 }
 
 # Only enable gaps on a workspace when there is at least one container
-#smart_gaps on
+smart_gaps on
 
 gaps inner 20
 

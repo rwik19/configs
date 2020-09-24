@@ -8,7 +8,9 @@ set number
 set cursorline
 set listchars=tab:\|\ 
 let mapleader = ","
-set list 
+set list
+set relativenumber
+set cursorcolumn
 " set clipboard+=unnamedplus
 syntax on
 syntax enable
@@ -16,6 +18,7 @@ set noshowmode
 " Always show tabs
 set showtabline=2
 set tabstop=4
+set shiftwidth=4
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -53,22 +56,28 @@ let g:vimtex_view_method = 'zathura'
 map T :tabnew<CR>
 map O :NERDTree<CR>
 vmap t "+y
-imap <C-s> <Esc>:w<CR>i
+imap <C-s> <Esc>:w<CR>a
+
+
+" Coc
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>
 
 
 " Latex
 autocmd FileType tex map I :VimtexCompile<CR>
-autocmd FileType map S :VimtexView<CR>
+autocmd FileType tex map S :VimtexView<CR>
 " Environments
-autocmd FileType tex inoremap ;e \begin{enumerate}<Enter><Space><Enter>\end{enumerate}<Esc>k<Backspace>i<Del>
-autocmd FileType tex inoremap ;a \begin{align*}<Enter><Space><Enter>\end{align*}<Esc>k<Backspace>i<Del>
-autocmd FileType tex inoremap ;s \begin{solution}<Enter><Space><Enter>\end{solution}<Esc>k<Backspace>i<Del>
+autocmd FileType tex inoremap ;e \begin{enumerate}<Enter>x<Enter>\end{enumerate}<Esc>ka<Backspace>
+autocmd FileType tex inoremap ;a \begin{align*}<Enter>x<Enter>\end{align*}<Esc>ka<Backspace>
+autocmd FileType tex inoremap ;s \begin{solution}<Enter>x<Enter>\end{solution}<Esc>ka<Backspace>
+autocmd FileType tex inoremap ;m \left(\begin{matrix}<Enter>x<Enter>\end{matrix}\right)<Esc>ka<Backspace><Backspace>
+
 " Non math
 autocmd FileType tex inoremap ;q \question
 autocmd FileType tex inoremap ;ss \subsection
 autocmd FileType tex inoremap ;sss \subsubsection
 autocmd FileType tex inoremap ;t \text{}<Esc>i
-autocmd FileType tex inoremap <Space><Space> <Esc>la
 " Math
 autocmd FileType tex inoremap $ $$<Esc>i
 autocmd FileType tex inoremap ;f \frac{}{}<Esc>2hi
@@ -80,7 +89,6 @@ autocmd FileType tex inoremap ;Z \mathbb{Z}
 autocmd FileType tex inoremap ;N \mathbb{N}
 autocmd FileType tex inoremap ;Q \mathbb{Q}
 autocmd FileType tex inoremap ;M \mathbb{M}
-autocmd FileType tex inoremap ;m \left(\begin{matrix}<Enter><Backspace><Space><Enter>\end{matrix}\right)<Esc>k<Backspace>i<Del>
 " Templates
 command Exam read /home/rwik/Desktop/RWIK/latex-templates/exam.tex
 command Article read /home/rwik/Desktop/RWIK/latex-templates/article.tex
