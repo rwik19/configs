@@ -9,6 +9,14 @@ Edit **/etc/locale.gen**. Uncomment en_US.UTF-8.
     sudo locale-gen  
     sudo localectl set-locale LANG=en_US.UTF-8  
 
+## Termite
+install *termite*  
+to open nvim in termite,  
+edit /usr/share/applications/nvim.desktop  
+Terminal=false
+Exec=/path/to/vim-script.sh  
+vim-script.sh is in the nvim folder
+
 ## Power Management
 Install *tlp*.  
 Install *powertop*.  
@@ -49,6 +57,6 @@ install Monaco
 ## Status bar
 Install *bumblebee-status*  
 
-##Transparency
-Install picom  
+## Transparency
+Install picom-tryone-git  
 Keep the picom folder in ~/.config  
