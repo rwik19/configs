@@ -21,11 +21,11 @@ set tabstop=4
 set shiftwidth=4
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
+hi Normal guibg=NONE ctermbg=NONE
 
 " colorscheme
 let base16colorspace=256
-colorscheme base16-gruvbox-light-hard
+colorscheme base16-gruvbox-dark-hard
 set background=dark
 " True Color Support if it's avaiable in terminal
 if has("termguicolors")

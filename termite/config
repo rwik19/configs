@@ -39,61 +39,27 @@ cursor_blink = off
 
 # "off", "left" or "right"
 #scrollbar = off
-
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
-
-#foreground = #dcdccc
-#foreground_bold = #ffffff
-#background = #3f3f3f
-
-#20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
-#
-# If unset, will reverse foreground and background
-#highlight = #2f2f2f
-#
-# Colors from color0 to color254 can be set
-#color0 = #3f3f3f
-#color1 = #705050
-#color2 = #60b48a
-#color3 = #dfaf8f
-#color4 = #506070
-#color5 = #dc8cc3
-#color6 = #8cd0d3
-#color7 = #dcdccc
-#color8 = #709080
-#color9 = #dca3a3
-#color10 = #c3bf9f
-#color11 = #f0dfaf
-#color12 = #94bff3
-#color13 = #ec93d3
-#color14 = #93e0e3
-#color15 = #ffffff
-
-background = rgba(63, 63, 63, 0.8)
-cursor = #eceff4
-foreground = #f8f8f2
-color0 = #21222c
-color1 = #ff5555
-color2 = #50fa7b
-color3 = #ffcb6b
-color4 = #82aaff
-color5 = #c792ea
-color6 = #8be9fd
-color7 = #f8f8f2
-color8 = #545454
-color9 = #ff6e6e
-color10 = #69ff94
-color11 = #ffcb6b
-color12 = #d6acff
-color13 = #ff92df
-color14 = #a4ffff
-color15 = #f8f8f2
-colorBD = #ffffff
+background = rgba(23, 23, 23,0.7)
+cursor = #f7af8d
+foreground = #9cc2c3
+color0 = #002831
+color1 = #d11c24
+color2 = #6cbe6c
+color3 = #a57706
+color4 = #2176c7
+color5 = #c61c6f
+color6 = #259286
+color7 = #eae3cb
+color8 = rgb(86, 125, 140)
+color9 = #f5163b
+color10 = #51ef84
+color11 = #b27e28
+color12 = #178ec8
+color13 = #e24d8e
+color14 = #00b39e
+color15 = #fcf4dc
+colorBD = #b5d5d3
 colorIT =
 colorUL =
 [hints]

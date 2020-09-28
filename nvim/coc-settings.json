@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema",
+  "description": "Configuration file for coc.nvim",
+  "additionalProperties": false,
+  "definitions": {
+	  "suggest.enablePreview": {
+      "type": "boolean",
+      "description": "Add preview option to completeopt, default: false.",
+      "default": true
+	  }
+	}
+}

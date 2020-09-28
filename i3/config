@@ -34,7 +34,7 @@ bindsym XF86TouchpadToggle exec bash ~/.config/i3/toggletouchpad.sh # toggle tou
 exec_always --no-startup-id rfkill block bluetooth
 
 #Desktop Background
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/'low-poly-sunrise-wallpaper.jpg'
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/'skywalker.jpg'
 
 #Redshift
 exec --no-startup-id redshift-gtk
@@ -253,7 +253,7 @@ bindsym Print exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -w
 bindsym $mod+Print exec gnome-screenshot -a
 #Remove title bar
-default_border pixel 5
+default_border pixel 2
 client.focused          #4c7899 #285577 #ffffff #2e9ef4   #c9c41c
 # Activate smart borders (always)
 smart_borders on
