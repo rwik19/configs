@@ -10,7 +10,7 @@ set listchars=tab:\|\
 let mapleader = ","
 set list
 set relativenumber
-set cursorcolumn
+" set cursorcolumn
 " set clipboard+=unnamedplus
 syntax on
 syntax enable
@@ -25,7 +25,7 @@ hi Normal guibg=NONE ctermbg=NONE
 
 " colorscheme
 let base16colorspace=256
-colorscheme base16-gruvbox-dark-hard
+colorscheme nord
 set background=dark
 " True Color Support if it's avaiable in terminal
 if has("termguicolors")
@@ -38,7 +38,7 @@ endif
 
 " airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_spacemacs'
+let g:airline_theme='nord'
 let g:airline#extensions#tabline#enabled = 1
 
 
@@ -57,7 +57,6 @@ map T :tabnew<CR>
 map O :NERDTree<CR>
 vmap t "+y
 imap <C-s> <Esc>:w<CR>a
-
 
 " Coc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"

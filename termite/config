@@ -6,7 +6,7 @@
 #cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
-font = Monaco Regular 12
+font = Sauce Code Pro Nerd Font 12
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -40,28 +40,32 @@ cursor_blink = off
 # "off", "left" or "right"
 #scrollbar = off
 [colors]
-background = rgba(23, 23, 23,0.7)
-cursor = #f7af8d
-foreground = #9cc2c3
-color0 = #002831
-color1 = #d11c24
-color2 = #6cbe6c
-color3 = #a57706
-color4 = #2176c7
-color5 = #c61c6f
-color6 = #259286
-color7 = #eae3cb
-color8 = rgb(86, 125, 140)
-color9 = #f5163b
-color10 = #51ef84
-color11 = #b27e28
-color12 = #178ec8
-color13 = #e24d8e
-color14 = #00b39e
-color15 = #fcf4dc
-colorBD = #b5d5d3
-colorIT =
-colorUL =
+cursor = #d8dee9
+cursor_foreground = #2e3440
+
+foreground = #d8dee9
+foreground_bold = #d8dee9
+background = rgba(46, 52, 64, 0.78)
+
+highlight = #4c566a
+
+color0  = #3b4252
+color1  = #bf616a
+color2  = #a3be8c
+color3  = #ebcb8b
+color4  = #81a1c1
+color5  = #b48ead
+color6  = #88c0d0
+color7  = #e5e9f0
+color8  = #4c566a
+color9  = #bf616a
+color10 = #a3be8c
+color11 = #ebcb8b
+color12 = #81a1c1
+color13 = #b48ead
+color14 = #8fbcbb
+color15 = #eceff4
+
 [hints]
 #font = Monospace 12
 #foreground = #dcdccc

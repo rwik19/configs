@@ -1,6 +1,6 @@
 # i3-gaps configs
 ## Themes
-Plata Noir  
+Nordic  
 Tela Blue icons  
 
 ## dmenu
@@ -51,11 +51,12 @@ install *notify-osd*
 ## Font
 install *ttf-font-awesome*  
 install *awesome-terminal-fonts*  
-install *powerline-onts*  
-install Monaco  
+install *powerline-fonts*  
+install Monaco
+install Sauce Code Pro Nerd Font
 
 ## Status bar
-Install *bumblebee-status*  
+Install *polybar*  
 
 ## Transparency
 Install picom-tryone-git  

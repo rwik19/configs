@@ -37,7 +37,7 @@
 window {
     background-color: @background;
     border:           1;
-    padding:          470 720;
+    padding:          450 700;
 }
 mainbox {
     border:  0;

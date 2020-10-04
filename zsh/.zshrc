@@ -106,7 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias install="yay -Sy"
-alias qinstall="yay -S"
 alias remove="yay -Rns"
 alias update="yay -Syu --overwrite /usr/lib\*/p11-kit-trust.so"
 alias autoremove="yay -Rns $(yay -Qdtq)"
@@ -116,4 +115,4 @@ alias rm="rm -i"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir vcs)
